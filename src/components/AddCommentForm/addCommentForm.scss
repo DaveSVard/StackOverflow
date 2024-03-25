@@ -1,0 +1,28 @@
+@import "./../../styles/vars.scss";
+
+.comment__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+
+    & textarea {
+        width: 100%;
+        min-height: 150px;
+        padding: 10px;
+        resize: none;
+        border-radius: 7px;
+        border: 1px solid $gray-border;
+    }
+
+    & input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 7px;
+        border: 1px solid $gray-border;
+    }
+    
+
+    .comment__form-btn {
+        margin-top: 25px;
+    }
+}

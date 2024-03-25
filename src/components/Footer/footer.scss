@@ -1,0 +1,87 @@
+@import "./../../styles/vars.scss";
+
+.footer {
+    background-color: black;
+    width: 100%;
+
+    padding: 35px;
+
+    @include media650Mixin {
+        padding: 17.5px;
+    }
+
+}
+
+.footer__wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    column-gap: 25px;
+    row-gap: 20px;
+
+    @include media980Mixin {
+        flex-direction: column;
+    }
+
+}
+
+.footer__logo {
+    margin-top: -15px;
+    width: 50px;
+    height: 50px;
+
+    @include media650Mixin {
+        display: none;
+    }
+}
+
+
+.footer__content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 20px;
+
+    .footer__content-item {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 10px;
+        column-gap: 10px;
+        font-size: 13px;
+
+        & h2 {
+            color: #C8CCD0;
+            font-weight: 700;
+        }
+
+        & p {
+            color: #BABFC5;
+            cursor: pointer;
+        }
+
+        @include media980Mixin {
+            flex-direction: row;   
+        }
+
+    }
+
+    .soc-links {
+        display: flex;
+        column-gap: 5px;
+
+        & > p {
+            font-size: 11px;
+            color: #BABFC5;
+            cursor: pointer;
+        } 
+
+    
+    }
+
+    @include media980Mixin {
+        grid-template-columns: 1fr;
+    }
+}

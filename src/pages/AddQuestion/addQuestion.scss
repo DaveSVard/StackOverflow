@@ -1,0 +1,120 @@
+@import "./../../styles/vars.scss";
+
+.addQuestion {
+    height: calc(100vh - 68px);
+    overflow: hidden;
+    background-color: #f1f2f3;
+}
+
+.addQuestion__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.addQuestion__title {
+    margin-top: 50px;
+}
+
+.addQuestion__form-info {
+    display: flex;
+    column-gap: 40px;
+    row-gap: 30px;
+
+    @include media820Mixin {
+        flex-direction: column-reverse;
+    }
+
+}
+
+.addQuestion__form {
+    width: 70%;
+    height: 5px;
+
+    @include media820Mixin {
+        width: 100%;
+    }
+
+}
+
+.addQuestion__help {
+    width: 320px;
+
+    display: flex;
+    flex-direction: column;
+    
+    @include media820Mixin {
+        width: 100%;
+    }
+
+}
+
+.addQuestion__help-title {
+    padding: 12px 15px;
+    background-color: #F9FAFA;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid #d6d9dc6c;
+
+
+}
+
+.addQuestion__help-info {
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    background-color: white;
+    border: 1px solid #d6d9dc6c;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.help-info__items-item {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    & > span {
+        border: 1px solid #d6d9dc6c;
+    }
+
+    .item__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        & > div {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+            font-weight: 600;
+
+            & > span {
+                font-size: 19px;
+                color: $blue;
+            }
+        }
+    }
+
+    .item__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 15px;
+
+        margin-left: 40px;
+        text-align: left;
+
+        & > div {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+//colors 
+
+$lite-gray: #636B74;
+$gray-border: #bfbfbf;
+$blue:#1B75D0;
+$blue-text: #155CA2;
+$yellow-LiteBg: #faecc6a9;
+$yellow-DarkBg: #ffe2919a;
+$yellow-border: #ffd45c98;
+$yellow-hover: #FBDBC0;
+
+//media
+
+$media980:980px;
+$media880:880px;
+$media820:820px;
+$media720:720px;
+$media650:650px;
+$media450:450px;
+
+
+//mixins
+
+@mixin media980Mixin {
+    @media screen and (max-width: $media980) {
+        @content;
+    }
+}
+
+@mixin media880Mixin {
+    @media screen and (max-width: $media880) {
+        @content;
+    }
+}
+
+@mixin media820Mixin {
+    @media screen and (max-width: $media820) {
+        @content;
+    }
+}
+
+@mixin media720Mixin {
+    @media screen and (max-width: $media720) {
+        @content;
+    }
+}
+
+@mixin media650Mixin {
+    @media screen and (max-width: $media650) {
+        @content;
+    }
+}
+
+@mixin media450Mixin {
+    @media screen and (max-width: $media450) {
+        @content;
+    }
+}
